@@ -1,0 +1,39 @@
+  nav {
+    background-color: bisque;
+  }
+  nav ul {
+    text-align: center;
+    display: block;
+  }
+
+  nav li {
+    display: block;
+    margin: 5px 0;
+  }
+/* Desktop & tablet besar */
+@media (min-width:768px) {
+  nav {
+    background-color: bisque;
+    width: 100%;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  ul > div:last-child {
+    position: absolute;
+    right: 15px;
+  }
+  div {
+    display: inline-block;
+  }
+}
+
