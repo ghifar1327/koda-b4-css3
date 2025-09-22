@@ -1,39 +1,107 @@
-  nav {
-    background-color: bisque;
-  }
-  nav ul {
-    text-align: center;
-    display: block;
-  }
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+  height: 50px;
+  margin: 20px 40px 0px 40px;
+}
+.navbar{
+  font-size: 20px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.navbar>div{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 
-  nav li {
-    display: block;
-    margin: 5px 0;
-  }
-/* Desktop & tablet besar */
-@media (min-width:768px) {
-  nav {
-    background-color: bisque;
-    width: 100%;
-  }
-
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  nav li {
-    display: inline-block;
-    margin-left: 10px;
-  }
-
-  ul > div:last-child {
-    position: absolute;
-    right: 15px;
-  }
-  div {
-    display: inline-block;
-  }
+}
+.navbar>div>div{
+  border-radius: 5px;
+  padding: 10px;
+  background-color: bisque;
+}
+section{
+  padding:50px 150px 0 150px;
+  display: flex;
+  justify-content: space-around;
+}
+section div>div:first-child{
+  font-size: 100px;
+}
+section div>div:nth-child(2){
+  font-size: 30px;
+}
+button{
+  width: 150px;
+  height: 50px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: bisque;
+}
+img{
+  width: 630px;
+  height: 630px;
 }
 
+@media (max-width: 425px){
+
+nav{
+  height: 50px;
+  margin: 0;
+}
+.navbar{
+  font-size: 10px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.navbar>div{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+}
+.navbar>div>div{
+  border-radius: 5px;
+  padding: 5px;
+  background-color: bisque;
+}
+section{
+  padding:5px;
+  display: flex;
+  flex-direction: column;
+}
+section div>div:first-child{
+  margin-top: 50px;
+  font-size: 50px;
+}
+section div>div:nth-child(2){
+  margin-top: 10px;
+  font-size: 15px;
+}
+section div:first-child div:last-child{
+  display: flex;
+  justify-content: center;
+}
+button{
+  justify-content: center;
+  width: 75px;
+  height: 25px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 10px;
+  background-color: bisque;
+}
+img{
+  width: 300px;
+  height: 315px;
+}
+
+}

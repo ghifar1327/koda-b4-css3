@@ -1,4 +1,4 @@
-# Medium
-![Alt Text](medium.png)
-# Large
-![Alt Text](large.png)
+# Mobile
+![Alt Text](mobile.png)
+# Desktop
+![Alt Text](desktop.png)
